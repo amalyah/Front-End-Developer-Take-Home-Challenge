@@ -11,12 +11,12 @@ Please feel free to peruse the Astro UX Design site (https://astrouxds.com/) for
 
 The data.json file consists of a list of contacts (satellites) and any alerts associated with them configured in a GRM application. Contacts can have properties such as name, status, state, etc. Any alerts the contact has will have the properties errorId, errorSeverity, etc.
 
-- For each alert, I need to know the following:
+- For each contact, I need to know the following:
   - Alert message (_errorMessage_)
   - Contact name (_contactName_)
   - Contact time (_contactBeginTimestamp_ - _contactEndTimestamp_)
-- I need to be able to see the details of an alert by clicking on a button called _Show Details_ that utilizes `rux-dialog` to show the _contactSatellite_ and _contactDetail_ values
-- I need the alerts to be sorted by error time with the most recent at the top (_errorTime_)
+- I need to be able to see the details of a contact by clicking on a button called _Show Details_ that utilizes `rux-dialog` to show the _contactSatellite_ and _contactDetail_ values
+- I need the contacts to be sorted by error time with the most recent at the top (_errorTime_)
 - I need to know which alerts I have already acknowledged so that I don’t process the same alert multiple times by mistake. Also once I’ve dealt with an alert, make it clear it’s not something I need to pay attention to again:
 - Only unacknowledged alerts can be acknowledged
 - Acknowledged alerts cannot be unacknowledged
